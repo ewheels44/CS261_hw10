@@ -1,10 +1,10 @@
-#include "inst_none.h"
+#include "inst_compact.h"
 #include <iostream>
 using namespace std;
 
 
-const int matrixSize = 10;
-const int blockingFactor = 5;
+const int matrixSize = 100;
+const int blockingFactor = 20;
 int a[matrixSize][matrixSize];
 int b[matrixSize][matrixSize];
 int c[matrixSize][matrixSize];
@@ -45,11 +45,11 @@ int main() {
     }
     
     // Display the product
-    for (i=0; i < matrixSize; i++) {
-        for (j=0; j < matrixSize; j++){
-            cerr << a[i][j] << ' ';
-        }
-        cerr << endl;
-    }
+    // for (i=0; i < matrixSize; i++) {
+    //     for (j=0; j < matrixSize; j++){
+    //         cerr << a[i][j] << ' ';
+    //     }
+    //     cerr << endl;
+    // }
     return 0;
 }
